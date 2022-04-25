@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220425 20:29:43.231" rpa="false" schemaversion="3">
+<suite id="s1" name="Consulta Google" source="C:\Users\Altec\PycharmProjects\133PetsRobotFramework\consulta_google.robot">
+<test id="s1-t1" name="Consulta Google" line="9">
+<kw name="Acessar o Chrome na pagina &lt;http://www.google.com.br&gt;" sourcename="Acessar o ${browser} na pagina &lt;${url}&gt;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url} ${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220425 20:29:43.449" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com.br Chrome'.</msg>
+<msg timestamp="20220425 20:29:43.451" level="INFO">Firefox driver log is always forced to to: C:\Users\Altec\PycharmProjects\133PetsRobotFramework\geckodriver-5.log</msg>
+<msg timestamp="20220425 20:29:46.612" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220425 20:29:46.614" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20220425 20:29:43.449" endtime="20220425 20:29:46.621"/>
+</kw>
+<status status="FAIL" starttime="20220425 20:29:43.449" endtime="20220425 20:29:46.622"/>
+</kw>
+<kw name="Digitar na pesquisa &quot;Ovos de Páscoa&quot;">
+<status status="NOT RUN" starttime="20220425 20:29:46.629" endtime="20220425 20:29:46.629"/>
+</kw>
+<kw name="Validar que &quot;Ovos de Páscoa&quot; aparece no titulo da guia">
+<status status="NOT RUN" starttime="20220425 20:29:46.633" endtime="20220425 20:29:46.633"/>
+</kw>
+<kw name="Fechar o browser">
+<status status="NOT RUN" starttime="20220425 20:29:46.634" endtime="20220425 20:29:46.634"/>
+</kw>
+<tag>rapido</tag>
+<status status="FAIL" starttime="20220425 20:29:43.448" endtime="20220425 20:29:46.634">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<doc>Testes de consulta no buscador do Google
+abre o navegador Chrome
+e realiza a consulta</doc>
+<status status="FAIL" starttime="20220425 20:29:43.232" endtime="20220425 20:29:46.636"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">rapido</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Consulta Google">Consulta Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
